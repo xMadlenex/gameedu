@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    display: grid;
+    grid-template-columns: 250px auto; /* Wider grocery list/cart and canvas columns */
+    grid-template-rows: auto auto; /* Two rows: canvas and quiz */
+    gap: 20px; /* Space between grid items */
+    align-items: start;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+#listAndCartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px; /* Increased width */
+}
+
+#groceryList {
+    margin: 0 0 10px 0; /* Margin below the grocery list */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 100%; /* Match parent container width */
+    flex-grow: 1; /* Dynamically grow as items are added */
+}
+
+#groceryList ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#groceryList li {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#groceryList li:hover {
+    background-color: #e1e1e1;
+}
+
+#groceryList p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cartContainer {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 100%;
+    flex-grow: 1; /* Dynamically grow as items are added */
+}
+
+#cartContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cartContainer li {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#cartContainer li:hover {
+    background-color: #e1e1e1;
+}
+
+#gameCanvas {
+    grid-column: 2; /* Occupy the second column */
+    grid-row: 1; /* Occupy the first row */
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    height: 500px; /* Fixed canvas height */
+}
+
+#quizSection {
+    grid-column: span 2; /* Span both columns */
+    grid-row: 2; /* Occupy the second row */
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #d1f5d3;
+    border: 1px solid #a0cfa9;
+}

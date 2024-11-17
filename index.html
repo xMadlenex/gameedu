@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYMULATOR SKLEPIKU SZKOLNEGO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="listAndCartContainer">
+            <div id="groceryList">
+                <h3>Lista zakupów</h3>
+                <ul id="listItems"></ul>
+                <p id="budget"></p>
+            </div>
+            <div id="cartContainer">
+                <h3>Koszyk zakupowy</h3>
+                <ul id="cartItems"></ul>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="quizSection" style="display: none;">
+            <h3>Zakupy zrobione! Sprawdź, czy masz wystarczająco pieniędzy, aby zapłacić Pani Krystynce!</h3>
+            <p>Ile zapłacisz za wszystkie przekąski? <input type="number" id="totalSpentInput" placeholder=""></p>
+            <p>Ile pieniędzy Ci zostanie? <input type="number" id="remainingBudgetInput" placeholder=""></p>
+            <button id="checkAnswerButton">SPRAWDŹ ODPOWIEDŹ</button>
+            <p id="quizFeedback" style="margin-top: 10px; font-weight: bold;"></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
