@@ -167,7 +167,7 @@ SHELF_Y_POSITIONS.forEach((y, shelfIndex) => {
 const seller = new Seller("💁‍♀️", DISPLAY_WIDTH - 80, DISPLAY_HEIGHT - 10, 140);
 
 function getRandomPrice() {
-    return Math.round((Math.random() * 2 + 1) * 100) / 100;
+    return Math.round((Math.random() * 2 + 1) * 10) / 10;
 }
 
 function drawShelves() {
